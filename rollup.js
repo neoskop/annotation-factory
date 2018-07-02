@@ -10,11 +10,11 @@ export default {
             '@angular/core': 'ng.core'
         },
         format: 'umd',
-        name: 'neoskop.injector',
-        file: 'bundle/injector.bundle.js',
+        name: 'neoskop.annotation-factory',
+        file: 'bundle/annotation-factory.bundle.js',
         sourcemap: true,
         amd: {
-            id: '@neoskop/injector'
+            id: '@neoskop/annotation-factory'
         }
     },
     plugins: [
