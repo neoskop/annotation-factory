@@ -1,6 +1,6 @@
 {
   "name": "@neoskop/annotation-factory",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Factories for Typescript Annotations",
   "main": "bundle/annotation-factory.bundle.js",
   "module": "dist/public_api.js",
