@@ -75,13 +75,13 @@ export class Annotator {
     static makeCtorDecorator(name : string, props? : (...args : any[]) => any, parentClass? : any) : any {
         const metaCtor = makeMetadataCtor(props);
         
-        function DecoratorFactory(this : any, objOrType : any) {
+        function DecoratorFactory(this : any, ...args : any[]) {
             if(this instanceof DecoratorFactory) {
-                metaCtor.call(this, objOrType);
+                metaCtor.apply(this, args);
                 return this;
             }
             
-            const instance = new (DecoratorFactory as any)(objOrType);
+            const instance = new (DecoratorFactory as any)(...args);
             
             const TypeDecorator : TypeDecorator = <TypeDecorator>function TypeDecorator(cls : Function) {
                 const annotations = cls.hasOwnProperty(ANNOTATIONS) ?
