@@ -65,10 +65,8 @@
       "src/fixtures.ts"
     ]
   },
-  "dependencies": {
-    "reflect-metadata": "0.1.12"
-  },
   "peerDependencies": {
-    "@angular/core": "^5.2.2 || ^6.0.0"
+    "@angular/core": "*",
+    "reflect-metadata": "*"
   }
 }
