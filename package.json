@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/neoskop/phantom#readme",
   "devDependencies": {
-    "@angular/core": "^6.0.4",
+    "@angular/core": "^11.0.5",
     "@types/chai": "4.1.4",
     "@types/mocha": "5.2.4",
     "@types/node": "10.5.1",
